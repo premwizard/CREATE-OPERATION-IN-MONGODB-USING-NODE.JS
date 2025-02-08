@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONGODB</title>
+</head>
+<body>
+    
+  <h1>MONGO CURD</h1>
+   {{message}}
+   <br>
+  <h3>Create</h3>
+   <form method="post" action="/store_book">
+        <label for="">Title</label>
+    <input type="text" name="title">
+    <label for="">Author</label>
+    <input type="text" name="author">
+    <input type="submit">
+   </form><br><br>
+
+   <ul>
+    {{#each employees}}
+    <li> {{this.title}} - {{this.author}} </li>
+{{/each}}
+
+   </ul>
+
+</body>
+</html>
